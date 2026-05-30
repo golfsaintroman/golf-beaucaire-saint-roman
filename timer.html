@@ -127,6 +127,7 @@ body::before{content:"";position:fixed;inset:0;background:radial-gradient(ellips
 <body>
 
 <div class="wrap" id="main-wrap">
+  <a href="index.html" style="text-decoration:none">
   <div class="hdr">
     <div class="logo-ring">
       <img id="logo-img" alt="Golf Saint-Roman">
@@ -134,6 +135,7 @@ body::before{content:"";position:fixed;inset:0;background:radial-gradient(ellips
     <div class="title">Golf Saint-Roman</div>
     <div class="subtitle">Beaucaire · Gard</div>
   </div>
+  </a>
 
   <div class="card fade-in" id="card">
     <!-- contenu injecté par JS -->
@@ -493,7 +495,7 @@ function generateQRCodes() {
   const grid = document.getElementById("qr-grid");
   if (grid.children.length > 0) return; // déjà généré
 
-  const base = window.location.origin + window.location.pathname;
+  const base = 'https://golfsaintroman.github.io/golf-beaucaire-saint-roman/timer.html';
   const holes = [
     {trou: 1, label: "Trou 1 — Départ", color: "#1a3d0f"},
     {trou: 3, label: "Trou 3 — Checkpoint", color: "#2471a3"},
